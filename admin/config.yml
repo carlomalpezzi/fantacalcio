@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: carlomalpezzi/fantacalcio
+  branch: main
+  site_domain: carlomalpezzi.github.io
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "articoli"
+    label: "Articoli"
+    folder: "posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Descrizione", name: "description", widget: "text" }
+      - { label: "Corpo", name: "body", widget: "markdown" }
