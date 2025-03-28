@@ -44,28 +44,48 @@
     nav a:hover {
       color: #38bdf8;
     }
+
     .hero {
+      position: relative;
       background: url('images/copertina-fantacalcio.png') center/cover no-repeat;
       height: 80vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       color: #fff;
       padding: 2rem;
+      overflow: hidden;
     }
-    .hero h2 {
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); /* overlay nero */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+
+    .hero-content h2 {
       font-size: 3rem;
       font-weight: 800;
+      margin: 0;
     }
-    .hero p {
+
+    .hero-content p {
       font-size: 1.2rem;
       margin-top: 1rem;
-      max-width: 600px;
     }
-    .hero a {
+
+    .hero-content a.btn {
       margin-top: 2rem;
+      display: inline-block;
       background: #38bdf8;
       color: #fff;
       padding: 0.75rem 1.5rem;
@@ -74,9 +94,11 @@
       font-weight: bold;
       transition: background 0.3s;
     }
-    .hero a:hover {
+
+    .hero-content a.btn:hover {
       background: #0ea5e9;
     }
+
     .grid {
       max-width: 1200px;
       margin: 4rem auto;
@@ -85,6 +107,7 @@
       gap: 2rem;
       padding: 0 1rem;
     }
+
     .card {
       background: #fff;
       border-radius: 12px;
@@ -93,12 +116,21 @@
       text-align: center;
       transition: transform 0.3s;
     }
+
     .card:hover {
       transform: translateY(-5px);
     }
+
     .card h3 {
       margin: 1rem 0 0.5rem;
     }
+
+    .card a {
+      color: #38bdf8;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
     footer {
       background: #1f2937;
       color: #ccc;
@@ -109,6 +141,7 @@
   </style>
 </head>
 <body>
+
   <header>
     <h1>FantaBlog 2025</h1>
     <nav>
@@ -123,13 +156,13 @@
     </nav>
   </header>
 
-<section class="hero">
-  <div class="hero-content">
-    <h2>Domina il Fantacalcio 2025</h2>
-    <p>Consigli settimanali, strategie e bonus nascosti per vincere nella tua lega.</p>
-    <a href="/consigli-giornata/" class="btn">Scopri i consigli della giornata</a>
-  </div>
-</section>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Domina il Fantacalcio 2025</h2>
+      <p>Consigli settimanali, strategie e bonus nascosti per vincere nella tua lega.</p>
+      <a href="/consigli-giornata/" class="btn">Scopri i consigli della giornata</a>
+    </div>
+  </section>
 
   <section class="grid">
     <div class="card">
@@ -162,5 +195,6 @@
   <footer>
     &copy; 2025 FantaBlog - Carlo Malpezzi. Tutti i diritti riservati.
   </footer>
+
 </body>
 </html>
