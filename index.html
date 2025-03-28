@@ -1,140 +1,164 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="it">
 <head>
-	<title>FantaBlog 2025 | Domina il Fantacalcio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Consigli, strategie, sorprese e statistiche per vincere al Fantacalcio 2025. Preparati ogni giornata con le nostre guide.">
-	<meta property="og:title" content="FantaBlog 2025" />
-	<meta property="og:description" content="Tutto per dominare al Fantacalcio: top11, flop, strategie e bonus."
-	/>
-	<meta property="og:image" content="images/copertina-fantacalcio.png" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fantacalcio 2025: strategie, consigli e sorprese per vincere la tua lega.">
+  <title>FantaBlog 2025 | Domina il Fantacalcio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #222;
+    }
+    header {
+      background-color: #111827;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      color: #fff;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    .hero {
+      height: 85vh;
+      background: url('images/copertina-fantacalcio.png') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      max-width: 600px;
+    }
+    .hero a {
+      margin-top: 2rem;
+      background: #38bdf8;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .hero a:hover {
+      background: #0ea5e9;
+    }
+    .grid {
+      max-width: 1200px;
+      margin: 4rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin: 1rem 0 0.5rem;
+    }
+    footer {
+      background: #1f2937;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
-<body class="is-preload">
+<body>
+  <header>
+    <h1>FantaBlog 2025</h1>
+    <nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="consigli-giornata/">Consigli</a></li>
+        <li><a href="asta/">Asta</a></li>
+        <li><a href="strategie/">Strategie</a></li>
+        <li><a href="sorprese/">Sorprese</a></li>
+        <li><a href="statistiche/">Statistiche</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<!-- Wrapper -->
-	<div id="wrapper" class="fade-in">
+  <section class="hero">
+    <h2>Domina il Fantacalcio 2025</h2>
+    <p>Consigli settimanali, strategie e bonus nascosti per vincere nella tua lega.</p>
+    <a href="consigli-giornata/">Vai ai consigli della giornata</a>
+  </section>
 
-		<!-- Intro (Hero Banner) -->
-		<section id="hero" class="main style1 dark fullscreen" style="background-image: url('images/copertina-fantacalcio.png'); background-size: cover; background-position: center;">
-			<div class="content">
-				<header>
-					<h2>Domina il Fantacalcio 2025</h2>
-				</header>
-				<p>Consigli settimanali, strategie e bonus nascosti per vincere nella tua lega.</p>
-				<footer>
-					<a href="consigli-giornata/" class="button style2 down">Vai ai consigli della giornata</a>
-				</footer>
-			</div>
-		</section>
+  <section class="grid">
+    <div class="card">
+      <h3>🗓️ Consigli Giornata</h3>
+      <p>Top11, flop e differenziali per ogni turno di campionato.</p>
+      <a href="consigli-giornata/">Scopri</a>
+    </div>
+    <div class="card">
+      <h3>🛒 Asta</h3>
+      <p>Budget, slot ideali e trucchetti per costruire una rosa vincente.</p>
+      <a href="asta/">Vai all'Asta</a>
+    </div>
+    <div class="card">
+      <h3>🧠 Strategie</h3>
+      <p>Moduli, turnover e scelte intelligenti per dominare la tua lega.</p>
+      <a href="strategie/">Approfondisci</a>
+    </div>
+    <div class="card">
+      <h3>💣 Sorprese</h3>
+      <p>Scommesse vincenti, outsider e nomi caldi da prendere prima degli altri.</p>
+      <a href="sorprese/">Scopri ora</a>
+    </div>
+    <div class="card">
+      <h3>📊 Statistiche</h3>
+      <p>Fantamedia, xG, rendimento e numeri per fare scelte concrete.</p>
+      <a href="statistiche/">Consulta dati</a>
+    </div>
+  </section>
 
-		<!-- Nav -->
-		<nav id="nav">
-			<ul class="links">
-				<li class="active"><a href="index.html">🏠 Home</a></li>
-				<li><a href="consigli-giornata/">🗓️ Consigli giornata</a></li>
-				<li><a href="asta/">🛒 Asta</a></li>
-				<li><a href="strategie/">🧠 Strategie</a></li>
-				<li><a href="sorprese/">💣 Sorprese</a></li>
-				<li><a href="statistiche/">📊 Statistiche</a></li>
-			</ul>
-		</nav>
-
-		<!-- Main -->
-		<div id="main">
-
-			<!-- Sezioni Categoria -->
-			<section class="posts">
-				<article>
-					<header>
-						<h2><a href="consigli-giornata/">Consigli Giornata</a></h2>
-					</header>
-					<a href="consigli-giornata/" class="image fit"><img src="images/consigli.jpg" alt="Consigli giornata" /></a>
-					<p>Top11, flop e differenziali per ogni turno di campionato.</p>
-					<ul class="actions special">
-						<li><a href="consigli-giornata/" class="button">Scopri</a></li>
-					</ul>
-				</article>
-
-				<article>
-					<header>
-						<h2><a href="asta/">Guida Asta</a></h2>
-					</header>
-					<a href="asta/" class="image fit"><img src="images/asta.jpg" alt="Guida asta" /></a>
-					<p>Strategie per affrontare l’asta iniziale e costruire una rosa solida.</p>
-					<ul class="actions special">
-						<li><a href="asta/" class="button">Scopri</a></li>
-					</ul>
-				</article>
-
-				<article>
-					<header>
-						<h2><a href="strategie/">Strategie di Gioco</a></h2>
-					</header>
-					<a href="strategie/" class="image fit"><img src="images/strategie.jpg" alt="Strategie" /></a>
-					<p>Moduli, turnover e bonus nascosti per giocare in modo intelligente.</p>
-					<ul class="actions special">
-						<li><a href="strategie/" class="button">Approfondisci</a></li>
-					</ul>
-				</article>
-
-				<article>
-					<header>
-						<h2><a href="sorprese/">Sorprese</a></h2>
-					</header>
-					<a href="sorprese/" class="image fit"><img src="images/sorprese.jpg" alt="Sorprese" /></a>
-					<p>Underdog e scommesse vincenti da prendere prima degli altri.</p>
-					<ul class="actions special">
-						<li><a href="sorprese/" class="button">Scopri</a></li>
-					</ul>
-				</article>
-
-				<article>
-					<header>
-						<h2><a href="statistiche/">Statistiche</a></h2>
-					</header>
-					<a href="statistiche/" class="image fit"><img src="images/statistiche.jpg" alt="Statistiche" /></a>
-					<p>Fantamedia, xG, rendimento e dati avanzati per scelte consapevoli.</p>
-					<ul class="actions special">
-						<li><a href="statistiche/" class="button">Vai ai numeri</a></li>
-					</ul>
-				</article>
-			</section>
-
-		</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<section>
-				<h2>Chi sono</h2>
-				<p>Mi chiamo Carlo, gioco al Fantacalcio da anni e condivido dritte, analisi e intuizioni settimanali per aiutarti a vincere nella tua lega.</p>
-			</section>
-			<section>
-				<h2>Contatti</h2>
-				<dl class="alt">
-					<dt>Email</dt>
-					<dd><a href="#">carlomalpezzi@email.com</a></dd>
-				</dl>
-			</section>
-		</footer>
-
-		<!-- Copyright -->
-		<div id="copyright">
-			<ul><li>&copy; FantaBlog 2025</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-		</div>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+  <footer>
+    &copy; 2025 FantaBlog - Carlo Malpezzi. Tutti i diritti riservati.
+  </footer>
 </body>
 </html>
