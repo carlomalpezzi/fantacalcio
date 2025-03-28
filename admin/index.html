@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>FantaBlog CMS</title>
   </head>
   <body>
-    <!-- Carica Netlify CMS -->
     <script>
       window.CMS_MANUAL_INIT = true;
     </script>
@@ -21,9 +20,9 @@
           public_folder: "/images/uploads",
           collections: [
             {
-              name: "posts",
+              name: "articoli",
               label: "Articoli",
-              folder: "posts",
+              folder: "posts/articoli",
               create: true,
               slug: "{{slug}}",
               fields: [
