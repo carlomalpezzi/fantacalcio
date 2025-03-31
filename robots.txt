@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Allow: /
+
+Sitemap: https://carlomalpezzi.github.io/fantacalcio/sitemap.xml
